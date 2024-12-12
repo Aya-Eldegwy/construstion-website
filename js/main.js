@@ -48,18 +48,3 @@ const showscrollup= ()=>{
     this.scrollY>=350?scrollup.classList.add("show-scroll-up")
                     :scrollup.classList.remove("show-scroll-up");
 };
-window.addEventListener('scroll',showscrollup)
-showscrollup()
-// scroll reveal
-const sr = ScrollReveal({
-    origin:'top',
-    distance:'100px',
-    duration:2500,
-    delay:400,
-    rest:true,
-})
-sr.reveal('.home-content, .sercives-data, .sercive-swiper, .footer-container')
-sr.reveal('.home-imgs',{origin:'bottom',delay:1000})
-sr.reveal('.about-imgs , .contact-img',{origin:'left'})
-sr.reveal('.about-data , .contact-data',{origin:'right'})
-sr.reveal('.project-card',{interval:80})
